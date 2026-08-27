@@ -88,5 +88,35 @@ keyboard nav, zero hand-positioned pixels.
 
 ---
 
+## 🤔 Why does this repo exist at all?
+
+🎯 **Honest context, not a sales pitch:** this is a **holdover**, not the
+final destination. It exists so a new helper/collaborator (or a future
+employee) can get productive in "house style" C quickly, without needing
+to already know the house inside-out.
+
+The REAL long-term direction — for mainstream/end users, and eventually
+for us building the house itself — is **visual scripting** (Scratch-block
+and Blueprint-node style editing, not hand-written C) for events, and
+over time, for everything. Code + tools like the ones in this repo are
+the bridge to get there, not the endpoint. 🌉
+
+🧩 That's exactly WHY this style matters, not despite it:
+- Small **ops**, a data-driven **registry** instead of hardcoded logic,
+  and a real **layout** file instead of hand-positioned pixels are all
+  choices that make code EASY TO READ BACK OUT and re-express visually
+  later — a block/node can represent "one op, one registry entry" far
+  more easily than it can represent one giant tangled program.
+- So: if a helper writes real code using this style, it's not a dead
+  end. It should be **somewhat compatible with, or reasonably easy to
+  convert into,** the visual-scripting version once that exists — that's
+  the whole point of holding this line now instead of letting everyone
+  write it however they want.
+- 👋 If you're a new helper reading this: you're not being asked to
+  learn a whole permanent framework — just enough discipline that your
+  work today doesn't become throwaway work later.
+
+---
+
 Have fun! Paste, build, and if your agent gets stuck on the "should we
 go fancier here" question — that's your cue to jump in. 🚀
